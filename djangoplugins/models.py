@@ -14,7 +14,7 @@ REMOVED = 2
 STATUS_CHOICES = (
     (ENABLED,  _('Enabled')),
     (DISABLED, _('Disabled')),
-    (REMOVED,  _('Removed')),order_with_respect_to
+    (REMOVED,  _('Removed')),
 )
 
 STATUS_CHOICES_ENABLED = (ENABLED,)
