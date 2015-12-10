@@ -14,7 +14,7 @@ REMOVED = 2
 STATUS_CHOICES = (
     (ENABLED,  _('Enabled')),
     (DISABLED, _('Disabled')),
-    (REMOVED,  _('Removed')),
+    (REMOVED,  _('Removed')),order_with_respect_to
 )
 
 STATUS_CHOICES_ENABLED = (ENABLED,)
@@ -87,7 +87,6 @@ class Plugin(DirtyFieldsMixin, models.Model):
     class Meta:
         unique_together = (("point", "name"),)
         order_with_respect_to = 'point'
-        ordering = ('index', 'id')
 
     def __str__(self):
         if self.title:
